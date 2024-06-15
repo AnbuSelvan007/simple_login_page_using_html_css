@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body{
+            background-color: rgb(239, 231, 231);
+        }
+        .form{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        }
+        form{
+            
+            min-height:380px;
+            width: 350px;
+            padding: 32px;
+
+
+            background-color: rgb(254, 254, 254);
+           
+        }
+        form img{
+            display: block;
+           margin :auto ;
+            height: 30px;
+        }
+        #i{
+            font-size: 23px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            user-select: none;
+            font-family: 'Poppins', sans-serif;
+
+            
+
+        }
+        .box1{
+            position: relative;
+            height: 45px;
+           
+            margin-bottom: 30px;
+        }
+        .box2{
+            position: relative;
+           
+            height: 45px;
+            margin-bottom: 30px;
+        }
+       .box1 label,.box2 label{
+            position: absolute;
+            left: 20%;
+            top: 10px;
+            font-size: 20px;
+        }
+        .box1 input,.box2 input{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+         input:focus +  label{
+        
+            position: absolute;
+            background-color:white;
+            top: -13px;
+            z-index: 30;
+            left: 20px;
+            transition: 0.2s;
+            color: blue;
+            
+        }
+    input:focus+ input{
+        border-color: blue;
+        
+    }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .last button{
+            
+            height: 40px;
+            width: 80px;
+        }
+        .last p{
+            text-decoration: none;
+            color: blue;
+            user-select: none;
+        }
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form>
+    <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="no image ">
+    <p id="i">sign in</p>
+    <div class="box1">
+        <input type="text" id="name">
+        <label for="text" id="name">enter mail-id</label>
+        
+       </div>
+       <div class="box2">
+        <input type="text" id="pass">
+        <label for="text" id="pass">enter password</label>
+
+        
+       </div>
+       <div class="check">
+        <input type="checkbox" id="ch">
+        <label for="ch">show pasword</label>
+       </div>
+       <div class="last">
+        <p>forgot password?</p>
+        <button>next</button>
+       </div>
+
+    
+</form>
+
+    
+</div>
+</body>
+</html>
